@@ -1,0 +1,199 @@
+body{
+    background: rgb(255,209,220);
+    background: linear-gradient(59deg, rgba(255,209,220,1) 39%, rgba(55,75,115,1) 69%, rgba(55,75,115,1) 100%);
+    height: 100vh;
+    color:white;
+    font-family: $mainFont;
+    
+}
+
+
+ .index{
+   margin-top:100px;
+ }
+
+ .index__logo{
+     text-align: center;
+     margin-top: 50px;
+
+ }
+
+  .h1{
+    font-size:2em;
+    
+   }
+
+ 
+
+   .header__cajas-logo{
+    height:($h-50 *2);
+    width:($w-25 *2);
+    text-align:center;
+    padding-bottom: 100px;
+   }
+
+    .header__cajas-login{
+        height: ($h-50 *2);
+        margin-right: 20px;
+        align-content:center;
+        align-items:center;
+        display: flex;
+        flex-direction:row;
+        justify-content:space-between;
+        width:($w-50 *2);
+        
+       
+      }
+       
+      .header__cajas-texto-resultados{
+        text-align:center;
+        line-height: 1rem;
+        height:($h-50 *2);
+        width:($w-25 *2);
+      }
+
+
+     /*defino que el contenedor se muestre como grid*/
+    .grid {
+    width:(($w-50 *2) -1%);
+    display:grid;
+    
+    }
+    .grid-template-columns{
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: 10vh 50 vh;
+     grid-gap:15px; 
+     padding-bottom:30px;
+     padding-top: 15px;
+     margin-left: 90px;
+   
+   } 
+    
+    .text__decoration{
+        text-decoration: none;
+        list-style-type:none;
+        justify-items: center;
+       align-items: center;
+    }
+
+header a{
+    text-decoration:$text-deco;
+    list-style: none;
+    list-style-type: none;
+}
+div{
+    justify-content:center;
+    .div__text{ 
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        font-weight:400;
+    }
+}
+
+h1{
+    
+    letter-spacing: 20px;
+        
+}
+
+.table{ 
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    padding-top: 20px;
+
+    
+  }
+.background__table{
+   background-color:#fdb9c9;
+   margin-left: 550px;
+   margin-right: 550px; 
+}
+
+.breadcrumb_display{
+  display:block;
+}
+
+@media only screen and (max-width:613px){
+    body{
+        background-color:rgb(248, 103, 163)!important;
+    }
+    nav{
+        background-color:rgb(255, 147, 165);
+    }
+    
+    .footer{
+        background-color:rgb(255, 147, 165);
+        padding:20px
+    }
+     .footer-rest{
+        background-color:rgb(255, 147, 165);
+        padding:10px
+     }
+    .grid {
+        width:99%;
+        display:grid;
+        
+       }
+     
+      .grid-template-columns{
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: 25vh 25vh 25vh 25vh;
+         grid-gap:15px; 
+
+       
+       } 
+       .justify-items{
+          justify-items: center;
+          align-items: center;
+      
+       }
+
+       .header__cajas-texto{
+       height: 100%;
+       width:100%;
+    
+       display:none
+    }
+       .header__cajas-logo{
+           align-items: center;
+           justify-items: center;
+           padding-top:none;
+        }
+
+        .header__cajas-login{
+            height: 100%;
+            margin-right: 20px;
+            align-content:center;
+            align-items:center;
+            display: flex;
+            flex-direction:column;
+            justify-content:space-between;
+            width: 100%;
+           text-align: center;
+
+        }
+        .header__cajas-texto-resultados{
+            padding-top:1rem;
+        }
+
+        .table{
+          background-color:pink;
+        }
+    }
+
+     /*pagina error 404*/
+ 
+       .color__texto404{
+        color:#374B73;
+      font-family:'Alfa Slab One', cursive;}
+      .centrar__texto{
+        text-align: center;
+        justify-content: center;
+        color:#374B73;
+       }
+
+       .padding__404{
+         padding-top:240px;
+         }
